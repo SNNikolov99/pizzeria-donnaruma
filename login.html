@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <!--login form-->
+    <form id="loginAccountForm" class="">
+        <h1>Влезнете във вашия акаунт</h1>
+        <section>
+            <label for="email">Имейл</label>
+            <input type="email">
+            <div class="error" id="email_error">Неправилно въведен имейл</div>
+        </section>
+        <section>
+            <label for="password">Парола</label>
+            <input type="password">
+            <div class="error" id="password_error">Неправилно въведена парола</div>
+        </section>
+        <button type="submit">Логин</button>
+        <a href="./login.html" id="createAccount">Нямате акаунт? Създайте своят профил тук.</a>
+    </form>
+
+    <!--create Account form-->
+    <form id="createAccountForm" class="hideForm">
+        <h1>Създайте нов акаунт</h1>
+        <section>
+            <label for="name">Име на профила</label>
+            <input type="">
+        </section>
+        <section>
+            <label for="adress">Адрес</label>
+            <input type="">
+        </section>
+        <section>
+            <label for="email">Имейл</label>
+            <input type="email">
+        </section>
+        <section>
+            <label for="password">Парола</label>
+            <input type="password">
+        </section>
+
+        <button type="submit">Регистрирай ме</button>
+        <a href="./login.html" id="loginAccount">Имате акаунт? Просто влезте в него.</a>
+    </form>
+    <script src="login.js"></script>
+</body>
+
+</html>

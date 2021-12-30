@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: orange;
+    flex-direction: column;
+    display: flex;
+    color: whitesmoke;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+/*aside*/
+
+aside {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+aside section {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+}
+
+aside p {
+    color: whitesmoke;
+    height: 2rem;
+    font-size: 20px;
+    font-weight: 750;
+    padding: 0rem 0.5rem;
+    margin: 1rem 0rem 0rem 0rem;
+}
+
+aside a {
+    color: whitesmoke;
+    height: 2rem;
+    font-size: 20px;
+    font-weight: 750;
+    width: fit-content;
+    align-self: flex-end;
+    text-decoration: none;
+    padding: 0rem 0.5rem;
+    margin: 1rem 0rem 0rem 0rem;
+    will-change: scale;
+    transition-duration: 0.15s;
+}
+
+aside a:hover {
+    transform: scale(1.06);
+}
+
+aside button a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+nav {
+    background-color: #faf4eb;
+    height: 100%;
+    margin-top: 25%;
+    width: 15rem;
+    color: #a33607;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+    border-right: 5px solid #a33607;
+    border-top: 5px solid #a33607;
+    border-radius: 5px;
+}
+
+nav li {
+    background-color: #ffebcc;
+    height: 3rem;
+    border: 1px solid #a33607;
+    padding: 0.5rem;
+}
+
+nav li:hover {
+    background-color: #a33607;
+    color: whitesmoke;
+    will-change: background-color;
+}
+
+
+/*main*/
+
+main {
+    margin: auto;
+}
+
+h1 {
+    font-size: 60px;
+    margin: 5rem;
+}
+
+
+/*Form */
+
+h2 {
+    font-size: 30px;
+    margin: 0rem 0rem 1rem 2rem;
+}
+
+h2:hover {
+    color: #cc0000;
+}
+
+h3 {
+    font-size: 25px;
+    align-self: flex-start;
+}
+
+form {
+    width: 768px;
+    background-color: #faf4eb;
+    padding: 10px;
+    border: 3px solid #a33607;
+    border-radius: 5px;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem;
+    transition-duration: 0.15s;
+    will-change: box-shadow;
+}
+
+
+/*Нека след като се хоувърне другаде мишката по-плавно да изчезне сянката*/
+
+form:hover {
+    box-shadow: 2px 2px 4px #a33607;
+}
+
+form section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+form figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+form img {
+    width: 350px;
+    height: 350px;
+    align-self: flex-end;
+}
+
+form p {
+    width: 300px;
+    height: 300px;
+    align-self: flex-start;
+    font-size: 20px;
+}
+
+form button {
+    background-color: orangered;
+    color: whitesmoke;
+    border-radius: 3px;
+    height: 2rem;
+    font-size: 16px;
+    font-weight: 750;
+    width: fit-content;
+    align-self: flex-end;
+    padding: 0rem 0.5rem;
+    margin: 1rem 0rem 0rem 0rem;
+    will-change: scale;
+    transition-duration: 0.15s;
+}
+
+
+/*Нека след като се хоувърне другаде мишката по-плавно да се смали бутона*/
+
+form button:hover {
+    transform: scale(1.03);
+}
+
+@media(max-width:768px) {
+    body {
+        background-color: orange;
+        flex-direction: column;
+        display: flex;
+        color: whitesmoke;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        flex-direction: column;
+    }
+    aside {
+        height: fit-content;
+        display: inline;
+    }
+    aside nav {
+        display: none;
+    }
+    form {
+        width: 90%;
+        background-color: #faf4eb;
+        padding: 10px;
+        border: 3px solid #a33607;
+        border-radius: 5px;
+        color: black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 1rem;
+        transition-duration: 0.15s;
+        will-change: box-shadow;
+        align-self: center;
+    }
+    form img {
+        width: 300px;
+        height: 350px;
+        align-self: flex-end;
+    }
+    form p {
+        width: 220px;
+        height: 220px;
+        align-self: flex-start;
+        font-size: 20px;
+    }
+}

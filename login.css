@@ -1,0 +1,73 @@
+form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 520px;
+    background-color: orange;
+    margin: auto;
+    color: whitesmoke;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-items: center;
+    border-radius: 1rem;
+    ;
+}
+
+form h1 {
+    align-self: center;
+    margin-top: 8%;
+    font-size: 36px;
+}
+
+form section {
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 20px;
+    align-self: flex-start;
+    margin-left: 3%;
+}
+
+form input {
+    width: 450px;
+    height: 25px;
+    border-radius: 0.5rem;
+    border-color: transparent;
+    font-size: 20px;
+    padding: 0rem 0.5rem;
+}
+
+form button {
+    width: fit-content;
+    height: 40px;
+    font-size: 25px;
+    border-radius: 0.5rem;
+    border-color: transparent;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: orangered;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    transition-duration: 0.15;
+    will-change: scale;
+}
+
+form button:focus {
+    transform: scale(0.97);
+}
+
+form a {
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+.hideForm {
+    display: none;
+}
+
+.error {
+    font-size: 20px;
+    color: red;
+    display: none;
+}
